@@ -23,7 +23,7 @@ class ViewController: UIViewController {
         let result = ticTacToeBoard.updateBoard(buttonTag: sender.tag)
         sender.setBackgroundImage(UIImage(named: ticTacToeBoard.updateBoardImage()), for: UIControl.State.normal)
         displayresult(flag: result)
-        sender.isEnabled = false
+        sender.isEnabled = true
     }
     
     @IBAction func restartPressed(_ sender: UIButton) {
